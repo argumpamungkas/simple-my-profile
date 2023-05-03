@@ -1,3 +1,3 @@
 "myprofile" 
 
--> https://example-my-protfolio.argumpamungkas.repl.co
+-> https://example-my-portfolio.argumpamungkas.repl.co
