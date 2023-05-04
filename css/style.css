@@ -21,7 +21,8 @@ hr {
 }
 
 section {
-  min-height: 600px;
+  min-height: 350px;
+  padding: 10px;
 }
 
 .gallery {
