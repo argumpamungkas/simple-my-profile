@@ -14,12 +14,6 @@ $(".page-scroll").on("click", function (e) {
   e.preventDefault();
 });
 
-// Parallax header
-
-$(window).on("load", function () {
-  $(".jumbotron").addClass("show");
-});
-
 // Parallax about & gallery
 $(window).scroll(function () {
   let wScroll = $(this).scrollTop();

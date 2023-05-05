@@ -14,12 +14,6 @@ body {
   background-position: 0;
   background-attachment: fixed;
   overflow: hidden;
-  opacity: 0;
-  transition: 1s;
-}
-
-.jumbotron.show {
-  opacity: 1;
 }
 
 .jumbotron img {
