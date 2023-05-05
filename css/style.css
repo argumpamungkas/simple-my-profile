@@ -7,11 +7,34 @@ body {
   margin-top: 30px;
 }
 
+.jumbotron {
+  height: 480px;
+  background-image: url(../assets/header-bg.jpg);
+  background-size: cover;
+  background-position: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.jumbotron.show {
+  opacity: 1;
+}
+
 .jumbotron img {
   height: 200px;
   width: 200px;
   object-fit: cover;
   border: 3px outset hsla(0, 60%, 70%, 0.5);
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  color: white;
+  text-shadow: 2px 3px 5px black;
 }
 
 hr {
@@ -21,12 +44,40 @@ hr {
 }
 
 section {
-  min-height: 350px;
+  min-height: 450px;
   padding: 10px;
+}
+
+.pLeft,
+.pRight {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
+  line-height: 30px;
+}
+
+.pRight {
+  transform: translate(50px, 0);
+}
+
+.about p.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .gallery {
   background-color: #eee;
+}
+
+.gallery .thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.8s;
+}
+
+.gallery .thumbnail.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .overlay {
